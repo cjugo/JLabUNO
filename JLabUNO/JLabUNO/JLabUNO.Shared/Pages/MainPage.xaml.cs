@@ -21,15 +21,16 @@ namespace JLabUNO.Pages
     {
         public MainPage()
         {
-            this.InitializeComponent();
+            InitializeComponent();
         }
-        public User user { get; set; }
+
+        public User User { get; set; }
 
         protected override void OnNavigatedTo(NavigationEventArgs e)
         {
             base.OnNavigatedTo(e);
             User = (User)e.Parameter;
-            WelcomeTextBlock.Text = $"Bienvenido: {user.FullName}";
+            WelcomeTextBlock.Text = $"Bienvenido: {User.FullName}";
         }
 
         private async void LogoutImage_Tapped(object sender, TappedRoutedEventArgs e)
@@ -50,5 +51,8 @@ namespace JLabUNO.Pages
                 PrimaryButtonText = "Sí",
                 CloseButtonText = "No"
             };
+
+            return await confirmDialog.ShowAsync();
         }
+    }
 }

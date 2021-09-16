@@ -31,7 +31,7 @@ namespace JLabUNO.Api.Data
             {
                 Random random = new Random();
                 User user = await _context.Users.FirstOrDefaultAsync();
-                for (int i = 1; i <= 200; i++)
+                for (int i = 1; i <= 10; i++)
                 {
                     _context.Products.Add(new Product
                     {
@@ -53,7 +53,7 @@ namespace JLabUNO.Api.Data
             if (!_context.Customers.Any())
             {
                 User user = await _context.Users.FirstOrDefaultAsync();
-                for (int i = 1; i <= 50; i++)
+                for (int i = 1; i <= 10; i++)
                 {
                     _context.Customers.Add(new Customer
                     {

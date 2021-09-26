@@ -88,5 +88,8 @@
     <Content Include="$(MSBuildThisFileDirectory)Assets\28363_door_exit.png" />
     <Content Include="$(MSBuildThisFileDirectory)Assets\delete.png" />
     <Content Include="$(MSBuildThisFileDirectory)Assets\edit.png" />
+    <Content Include="$(MSBuildThisFileDirectory)Assets\exit.png" />
+    <Content Include="$(MSBuildThisFileDirectory)Assets\exit_a.png" />
+    <Content Include="$(MSBuildThisFileDirectory)Assets\exit_b.png" />
   </ItemGroup>
 </Project>

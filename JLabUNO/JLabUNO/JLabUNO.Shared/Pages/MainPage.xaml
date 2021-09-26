@@ -13,11 +13,11 @@
             <RowDefinition Height="Auto"/>
             <RowDefinition Height="*"/>
         </Grid.RowDefinitions>
-        <StackPanel Grid.Row="0" Background="Navy">
+        <StackPanel Grid.Row="0" Background="navy">
             <TextBlock Text="JLab" Foreground="White" FontSize="20" Padding="10"/>
             <StackPanel HorizontalAlignment="Right" Orientation="Horizontal"   Margin="0,-45,10,0">
-                <TextBlock x:Name="WelcomeTextBlock" Text="Welcome" FontSize="20" Foreground="Yellow" Padding="10" VerticalAlignment="Center" />
-                <Image Source="/Assets/28363_door_exit.png" Height="40" Tapped="LogoutImage_Tapped"/>
+                <TextBlock x:Name="WelcomeTextBlock" Text="Welcome" FontSize="20" Foreground="White" Padding="10" VerticalAlignment="Center" />
+                <Image Source="/Assets/exit_a.png" Height="40" Tapped="LogoutImage_Tapped"/>
             </StackPanel>
         </StackPanel>
         <NavigationView Grid.Row="1" IsPaneOpen="False">

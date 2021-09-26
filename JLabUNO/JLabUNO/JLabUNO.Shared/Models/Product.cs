@@ -9,8 +9,10 @@
         public string Description { get; set; }
 
         public decimal Price { get; set; }
-
+        public string PriceString => $"{Price:C2}";
         public float Stock { get; set; }
+
+        public string StockString => $"{Stock:N3}";
 
         public bool IsActive { get; set; }
 
